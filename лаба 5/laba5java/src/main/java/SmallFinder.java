@@ -41,17 +41,7 @@ public class SmallFinder {
         file.close();
         return list;
     }
-  public ArrayList<String> SplitWithSymbol(String delimeter, ArrayList<String> list) {
-        ArrayList<String> words = new ArrayList<>();
-        for (String str : list) {
-            String[] subStr;
-            subStr = str.split(delimeter);
-            for (int i = 0; i < subStr.length; i++) {
-                if(subStr[i]!=" " && subStr[i]!=null && subStr[i]!="\n") words.add(subStr[i].trim());
-            }
-        }
-        return words;
-    }
+
   private void AddListToFile(String path, ArrayList<String> list){
         try (FileWriter writer = new FileWriter(path, false)) {
             for(String word: list){
