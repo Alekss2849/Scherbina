@@ -6,7 +6,7 @@ public class CustomThread extends Thread {
     public CustomThread(long iterationsPerProcess) {
         this.iterationsPerProcess = iterationsPerProcess;
     }
-
+@Override
     public void run() {
         Random rnd = new Random();
         double x, y;
