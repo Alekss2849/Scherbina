@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class SmallFinder {
     private ArrayList<String> theShortest = new ArrayList<>();
-    private int shortest = 100;
+    private int shortest = 20;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public ArrayList<String> FindTheShortestAndWrite(String pathRead, String pathWrite) throws FileNotFoundException {
